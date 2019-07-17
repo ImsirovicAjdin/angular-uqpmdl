@@ -2,9 +2,21 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  template: `
+    <div>
+      Parent Component
+    </div>
+  `
 })
 export class AppComponent  {
-  name = 'Angular';
+  vehicles = [
+    { 
+      id: 1,
+      make: 'Toyota'
+    },
+    {
+      id: 2,
+      make: 'Subaru'
+    }
+  ]
 }
